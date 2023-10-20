@@ -1,12 +1,13 @@
+// import React from 'react'
 
-function Test() {
+export default function Test() {
   function ClickBait() {
     alert("Clickbited ")
   }
-    <div>
-      <h1> Hello from Test component</h1>
-      <button onClick={ClickBait}> Click me</button>
-    </div>
+  return (
+      <div>
+        <h1> Hello from Test component</h1>
+        <button onClick={ClickBait}> Click me</button>
+      </div>
+  )
 }
-
-export default Test
