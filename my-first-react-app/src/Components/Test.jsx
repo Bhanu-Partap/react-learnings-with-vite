@@ -1,9 +1,12 @@
-// import React from 'react'
 
-export default function Test() {
-  return (
-   
-      <h1>Hello From Test Component</h1>
- 
-  );
+function Test() {
+  function ClickBait() {
+    alert("Clickbited ")
+  }
+    <div>
+      <h1> Hello from Test component</h1>
+      <button onClick={ClickBait}> Click me</button>
+    </div>
 }
+
+export default Test
