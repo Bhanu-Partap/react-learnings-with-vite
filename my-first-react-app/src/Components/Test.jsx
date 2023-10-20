@@ -2,10 +2,8 @@
 
 export default function Test() {
   return (
-    <>
-    <div>Testing the Component</div>
-    
-    </>
-  )
+   
+      <h1>Hello From Test Component</h1>
+ 
+  );
 }
-
