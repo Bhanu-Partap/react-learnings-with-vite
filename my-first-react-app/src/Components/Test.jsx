@@ -2,7 +2,7 @@
 
 export default function Test() {
   function ClickBait() {
-    alert("Clickbited ")
+    alert("Clickbaited ")
   }
   return (
       <div>
