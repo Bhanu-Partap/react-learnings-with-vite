@@ -7,6 +7,7 @@ function App() {
   const [data, setData] = useState("M8")
   function updateDate(){
     setData("BMW M8")
+    console.warn("00------00");
   }
 
   return (
