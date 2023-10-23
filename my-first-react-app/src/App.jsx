@@ -1,13 +1,19 @@
 import './App.css'
-import Test from './Components/Test'
+import { useState } from 'react'
+// import Test from './Components/Test'
 
 
 function App() {
+  const [data, setData] = useState("M8")
+  function updateDate(){
+    setData("BMW M8")
+  }
 
   return (
     <>
-      <h1>Helloo There</h1>
-      <Test />
+      <h1>{data}</h1>
+      <button onClick={updateDate}>Update Data </button>
+      {/* <Test /> */}
     </>
   )
 }
