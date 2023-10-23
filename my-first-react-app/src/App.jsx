@@ -1,22 +1,17 @@
-import './App.css'
-import { useState } from 'react'
-// import Test from './Components/Test'
+import { useState } from "react"
+import "./App.css"
 
+export default function App() {
+  const [data, setData] = useState("M5")
 
-function App() {
-  const [data, setData] = useState("M8")
-  function updateDate(){
-    setData("BMW M8")
-    console.warn("00------00");
+  function updateData() {
+    setData("BMW M5");
   }
 
   return (
     <>
       <h1>{data}</h1>
-      <button onClick={updateDate}>Update Data </button>
-      {/* <Test /> */}
+      <button onClick={updateData}>Update the data</button>
     </>
   )
 }
-
-export default App
