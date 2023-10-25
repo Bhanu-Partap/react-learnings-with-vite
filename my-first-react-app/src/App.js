@@ -1,5 +1,6 @@
 import React from "react"
 import "./App.css"
+import Student from "./Components/Student";
 
 //================ Functional Component State Change ===================//
 // import { useState } from "react";
@@ -26,13 +27,15 @@ import "./App.css"
   constructor(){
     super();
     this.state ={
-      data:"BMW"
-    }
+      // data:"BMW"
+      data:1
+        }
   }
 
   apple(){
     // alert("Apllee there")
-    this.setState({data :"PORSCHE"})
+    // this.setState({data :"PORSCHE"})
+    this.setState({data : this.state.data + 1})
   }
 
   render(){
@@ -40,6 +43,7 @@ import "./App.css"
       <>
         <h1>{this.state.data} </h1>
         <button onClick={()=>{this.apple()}}>Update the data</button>
+        <Student name="BMW M5" />
       </>
     )
   }
