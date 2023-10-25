@@ -1,7 +1,8 @@
 import React from "react"
 import "./App.css"
-// import { useState } from "react";
 
+//================ Functional Component State Change ===================//
+// import { useState } from "react";
 
 // export default function App() {
 //   const [data, setData] = useState("M5")
@@ -19,12 +20,25 @@ import "./App.css"
 // }
 
 
+//================ Class Component State Change ===================//
+
  class App extends React.Component {
+  constructor(){
+    super();
+    this.state ={
+      data:"BMW"
+    }
+  }
+
+  apple(){
+    alert("Apllee there")
+  }
+
   render(){
     return (
       <>
         <h1>Hello </h1>
-        <button>Update the data</button>
+        <button onClick={()=>{this.apple}}>Update the data</button>
       </>
     )
   }
