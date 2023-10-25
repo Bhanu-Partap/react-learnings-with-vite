@@ -37,8 +37,8 @@ import "./App.css"
   render(){
     return (
       <>
-        <h1>Hello </h1>
-        <button onClick={()=>{this.apple}}>Update the data</button>
+        <h1>{this.state.data} </h1>
+        <button onClick={()=>{this.apple()}}>Update the data</button>
       </>
     )
   }
