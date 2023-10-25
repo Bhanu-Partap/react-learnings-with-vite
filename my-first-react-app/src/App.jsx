@@ -31,7 +31,8 @@ import "./App.css"
   }
 
   apple(){
-    alert("Apllee there")
+    // alert("Apllee there")
+    this.setState({data :"PORSCHE"})
   }
 
   render(){
