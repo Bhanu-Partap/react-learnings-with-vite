@@ -1,12 +1,13 @@
 // import React from "react"
-import React, { useState } from "react";
+// import { useState } from "react";
 import "./App.css"
-import Student from "./Components/Student";
+// import Student from "./Components/Student";
+import Class from "./Components/Class";
 
 //================ Functional Component State Change ===================//
 // import { useState } from "react";
 
-// export default function App() {
+export default function App() {
 
 //=================State Change ==========================================//
   // const [data, setData] = useState("M5")
@@ -15,37 +16,37 @@ import Student from "./Components/Student";
   //   setData("BMW M5");
   // }
 
-//   const [name, setName] = useState('Lamborghini');
+  // const [name, setName] = useState('Lamborghini');
 
-//   function nameChange(){
-//     setName("BMW");
-//   }
+  // function nameChange(){
+  //   setName("BMW");
+  // }
 
-//   return (
-//     <>
-//       {/* <h1>{data}</h1>
-//       <button onClick={updateData}>Update the data</button> */}
+  return (
+    <>
+      {/* <h1>{data}</h1>
+      <button onClick={updateData}>Update the data</button> */}
 
-// {/* ==================================+++++++++Props passing+++++++++++===================================== */}
+{/* ==================================+++++++++Props function passing+++++++++++===================================== */}
+      {/* <Student name={name} /> */}
 
-//       <Student name={name} />
+      {/* ========= with Function props change============ */}
+      {/* <button onClick={nameChange}>Update Name</button> */}
 
-//       {/* ========= with Function props change============ */}
-//       {/* <button onClick={nameChange}>Update Name</button> */}
+      {/* ========= with setName props change============ */}
+      {/* <button onClick={()=>{setName("BMW")}}>Update Name</button> */}
 
-//       {/* ========= with setName props change============ */}
-//       <button onClick={()=>{setName("BMW")}}>Update Name</button>
+      
+      {/* email= "support.lamborghini@gmail.com" other= {{address:"Italy", number: "50"}}  */}
+      {/* <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", number: "21"}} />
+      <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", number: "24"}}/> */}
 
+{/* Classs Props  */}
 
-//       {/* email= "support.lamborghini@gmail.com" other= {{address:"Italy", number: "50"}}  */}
-//       {/* <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", number: "21"}} />
-//       <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", number: "24"}}/> */}
-//     </>
-//   )
-// }
-
-
-
+      <Class name="Lamborghini" country= "Italian" />
+    </>
+  )
+}
 
 
 //================ Class Component State Change ===================//
@@ -77,9 +78,3 @@ import Student from "./Components/Student";
 // }
 
 // export default App ;
-
-export default class App extends React.Component{
-  render(){
-
-  }
-}
