@@ -1,5 +1,5 @@
 // import React from "react"
-// import { useState } from "react";
+import { useState } from "react";
 import "./App.css"
 import Student from "./Components/Student";
 
@@ -15,6 +15,8 @@ export default function App() {
   //   setData("BMW M5");
   // }
 
+  const [name, setName] = useState('Lamborghini');
+
   return (
     <>
       {/* <h1>{data}</h1>
@@ -22,9 +24,11 @@ export default function App() {
 
 {/* ==================================+++++++++Props passing+++++++++++===================================== */}
 
-      <Student name="Lamborghini" email= "support.lamborghini@gmail.com" other= {{address:"Italy", number: "50"}} />
-      <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", number: "21"}} />
-      <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", number: "24"}}/>
+      <Student name={name} />
+      <button onClick={()=>{setName("BMW")}}>Update Name</button>
+      {/* email= "support.lamborghini@gmail.com" other= {{address:"Italy", number: "50"}}  */}
+      {/* <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", number: "21"}} />
+      <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", number: "24"}}/> */}
     </>
   )
 }
