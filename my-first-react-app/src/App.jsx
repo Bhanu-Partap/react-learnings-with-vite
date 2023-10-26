@@ -17,6 +17,10 @@ export default function App() {
 
   const [name, setName] = useState('Lamborghini');
 
+  function nameChange(){
+    setName("BMW");
+  }
+
   return (
     <>
       {/* <h1>{data}</h1>
@@ -25,7 +29,14 @@ export default function App() {
 {/* ==================================+++++++++Props passing+++++++++++===================================== */}
 
       <Student name={name} />
+
+      {/* ========= with Function props change============ */}
+      {/* <button onClick={nameChange}>Update Name</button> */}
+
+      {/* ========= with setName props change============ */}
       <button onClick={()=>{setName("BMW")}}>Update Name</button>
+
+      
       {/* email= "support.lamborghini@gmail.com" other= {{address:"Italy", number: "50"}}  */}
       {/* <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", number: "21"}} />
       <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", number: "24"}}/> */}
