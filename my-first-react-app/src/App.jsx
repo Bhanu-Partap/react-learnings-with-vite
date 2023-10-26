@@ -20,7 +20,7 @@ export default function App() {
       {/* <h1>{data}</h1>
       <button onClick={updateData}>Update the data</button> */}
 
-{/* ==============+++++++++Props passing+++++++++++===================== */}
+{/* ==================================+++++++++Props passing+++++++++++===================================== */}
 
       <Student name="Lamborghini" email= "support.lamborghini@gmail.com" other= {{address:"Italy", Number: "50"}} />
       <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", Number: "21"}} />
