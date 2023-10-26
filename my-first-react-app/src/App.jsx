@@ -22,9 +22,9 @@ export default function App() {
 
 {/* ==================================+++++++++Props passing+++++++++++===================================== */}
 
-      <Student name="Lamborghini" email= "support.lamborghini@gmail.com" other= {{address:"Italy", Number: "50"}} />
-      <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", Number: "21"}} />
-      <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", Number: "24"}}/>
+      <Student name="Lamborghini" email= "support.lamborghini@gmail.com" other= {{address:"Italy", number: "50"}} />
+      <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com" other= {{address:"Germany", number: "21"}} />
+      <Student name="Koneigsegg" email= "support.koneigsegg@gmail.com" other= {{address:"Germany", number: "24"}}/>
     </>
   )
 }
