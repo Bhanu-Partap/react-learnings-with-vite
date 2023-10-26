@@ -17,7 +17,8 @@ export default function App() {
     <>
       <h1>{data}</h1>
       <button onClick={updateData}>Update the data</button>
-      <Student name="PORSCHE GT3" />
+      <Student name="PORSCHE GT3 RS" />
+      <Student name="PORSCHE GT3 RS" email= "support.porsche@gmail.com"  />
     </>
   )
 }
