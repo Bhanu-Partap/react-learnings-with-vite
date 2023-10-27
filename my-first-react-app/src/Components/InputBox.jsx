@@ -30,6 +30,9 @@ export default function InputBox() {
     function getData(val) {
         console.log(val.target.value);
         setData(val.target.value)
+        
+        // when user type the output get vanished and after clicking the button we will get the output.
+        setPrint(false) 
     }
     return (
         <>
