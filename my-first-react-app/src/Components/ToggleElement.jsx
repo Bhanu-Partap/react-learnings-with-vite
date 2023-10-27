@@ -8,8 +8,13 @@ export default function ToggleElement() {
             {
                 status ? <h1>Some Content</h1> : null
             }
-            <button onClick={() => setStatus(false)} > Hide Content</button>
-            <button onClick={() => setStatus(true)} > Show Content</button>
+{/* =================Toggle with Different buttons ======================== */}
+
+            {/* <button onClick={() => setStatus(false)} > Hide Content</button>
+            <button onClick={() => setStatus(true)} > Show Content</button> */}
+            
+{/* =================Toggle with one button ======================== */}
+            <button onClick={() => setStatus(!status)} > Toggle Content </button>
         </>
     )
 }
