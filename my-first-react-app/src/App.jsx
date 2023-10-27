@@ -1,8 +1,13 @@
+import "./App.css"
+import InputBox from "./Components/InputBox"
 // import React from "react"
 // import { useState } from "react";
-import "./App.css"
 // import Student from "./Components/Student";
-import Class from "./Components/Class";
+// import Class from "./Components/Class";
+
+
+
+
 
 //================ Functional Component State Change ===================//
 // import { useState } from "react";
@@ -43,7 +48,10 @@ export default function App() {
 
 {/* Classs Props  */}
 
-      <Class name="Lamborghini" country= "Italian" />
+      {/* <Class name="Lamborghini" country= "Italian" /> */}
+
+      <InputBox />
+
     </>
   )
 }
