@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-export default function InputBox() {
 
-    //=============Normal Using state getting the value of the input box ============//
-    
+//=============Normal Using state getting the value of the input box ============//
+
+// export default function InputBox() {
 //     const [data, setData] = useState(null);
 
 //     function getData(val){
@@ -23,19 +23,22 @@ export default function InputBox() {
 //     )
 
 
+export default function InputBox() {
     const [data, setData] = useState(null);
+    const [print, setPrint] = useState(false);
 
-    function getData(val){
+    function getData(val) {
         console.log(val.target.value);
         setData(val.target.value)
     }
-  return (
-    <>
-        <div className="inputbox">
-            <h1>Input Box</h1>
-            <input type="text" onChange={getData}/>
-            <h2>The Input data is : {data}</h2>
-        </div>
-    </>
+    return (
+        <>
+            <div className="inputbox">
+                <h1>Input Box</h1>
+                <input type="text" onChange={getData} />
+                <button> Get Value </button>
+                <h2>The Input data is : {data}</h2>
+            </div>
+        </>
     )
 }
