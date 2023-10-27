@@ -36,8 +36,9 @@ export default function InputBox() {
             <div className="inputbox">
                 <h1>Input Box</h1>
                 <input type="text" onChange={getData} />
-                <button> Get Value </button>
-                <h2>The Input data is : {data}</h2>
+                <button onClick={()=>{setPrint(true)}}> Get Value </button>
+                {  print ? <h2>The Input data is :{data} </h2>: null}
+                
             </div>
         </>
     )
