@@ -1,5 +1,6 @@
 import "./App.css"
 import InputBox from "./Components/InputBox"
+import ToggleElement from "./Components/ToggleElement"
 // import React from "react"
 // import { useState } from "react";
 // import Student from "./Components/Student";
@@ -50,7 +51,8 @@ export default function App() {
 
       {/* <Class name="Lamborghini" country= "Italian" /> */}
 
-      <InputBox />
+      {/* <InputBox /> */}
+      <ToggleElement />
 
     </>
   )
