@@ -16,13 +16,13 @@ export default function Formbox() {
             <div className="Formbox">
                 <h1>Handle Form in React</h1>
                 <form onSubmit={changeData} >
-                    <input type="text" placeholder='name' /> <br /> <br />
-                    <select>
+                    <input type="text" placeholder='name' onChange={(e)=>setName(e.target.value)} /> <br /> <br />
+                    <select onChange={(e)=>setInterest(e.target.value)}>
                         <option value="">Marvel</option>
                         <option value="">DC</option>
                         <option value="">DC avanti</option>
                     </select> <br /><br />
-                    <input type="checkbox" /><span>Accept the Terms and Conditions</span>
+                    <input type="checkbox" onChange={(e)=>setTnc(true)} /><span>Accept the Terms and Conditions</span>
                     <button type="submit">Submit</button>
                 </form>
             </div>
