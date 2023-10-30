@@ -9,6 +9,7 @@ export default function Formbox() {
     const [interest, setInterest] = useState("");
 
     function changeData(e) {
+        console.log(name,interest,tnc);
         e.preventDefault();
     }
     return (
@@ -18,9 +19,9 @@ export default function Formbox() {
                 <form onSubmit={changeData} >
                     <input type="text" placeholder='name' onChange={(e)=>setName(e.target.value)} /> <br /> <br />
                     <select onChange={(e)=>setInterest(e.target.value)}>
-                        <option value="">Marvel</option>
-                        <option value="">DC</option>
-                        <option value="">DC avanti</option>
+                        <option>Marvel</option>    
+                        <option>DC</option>
+                        <option>DC avanti</option>
                     </select> <br /><br />
                     <input type="checkbox" onChange={(e)=>setTnc(e.target.checked)} /><span>Accept the Terms and Conditions</span>
                     <button type="submit">Submit</button>
