@@ -17,7 +17,7 @@ export default function Formbox() {
             <div className="Formbox">
                 <h1>Handle Form in React</h1>
                 <form onSubmit={changeData} >
-                    <input type="text" placeholder='name' value={name} onChange={(e)=>setName(e.target.value)} /> <br /> <br />
+                    <input type="text" placeholder='name' onChange={(e)=>setName(e.target.value)} /> <br /> <br />
                     <select onChange={(e)=>setInterest(e.target.value)}>
                         <option>Selet Options</option>    
                         <option>DC</option>
