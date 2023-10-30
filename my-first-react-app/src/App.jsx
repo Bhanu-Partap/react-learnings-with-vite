@@ -1,4 +1,5 @@
 import "./App.css"
+import Formbox from "./Components/Formbox"
 import InputBox from "./Components/InputBox"
 import ToggleElement from "./Components/ToggleElement"
 // import React from "react"
@@ -52,7 +53,9 @@ export default function App() {
       {/* <Class name="Lamborghini" country= "Italian" /> */}
 
       {/* <InputBox /> */}
-      <ToggleElement />
+      {/* <ToggleElement /> */}
+
+      <Formbox />
 
     </>
   )
