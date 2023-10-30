@@ -22,7 +22,7 @@ export default function Formbox() {
                         <option value="">DC</option>
                         <option value="">DC avanti</option>
                     </select> <br /><br />
-                    <input type="checkbox" onChange={(e)=>setTnc(true)} /><span>Accept the Terms and Conditions</span>
+                    <input type="checkbox" onChange={(e)=>setTnc(e.target.checked)} /><span>Accept the Terms and Conditions</span>
                     <button type="submit">Submit</button>
                 </form>
             </div>
