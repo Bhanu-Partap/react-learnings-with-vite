@@ -3,7 +3,7 @@
 export default function Formbox() {
 
     function changeData(e){
-        e.preventdefault;
+        e.preventDefault();
     }
   return (
     <>
