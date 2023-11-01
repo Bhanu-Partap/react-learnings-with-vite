@@ -11,8 +11,12 @@ export default function Login() {
 
     function userHandler(e) {
         let item = e.target.value;
+
         if (item.length < 3) {
             setUserErr(true);
+        }
+        else{
+            setUserErr(false)
         }
         console.warn(e.target.value.length);
     }
@@ -24,7 +28,7 @@ export default function Login() {
             <div className="Login">
                 <form onSubmit={loginHandle} >
                     <h1>Login Details</h1>
-                    <input type="text" placeholder='User Id' onChange={userHandler} />
+                    <input type="text" placeholder='User Id' onChange={userHandler} /> {userErr ? <span>User Not Verified</span> : <span>User Verified</span>}
                     <br /> <br />
                     <input type="text" placeholder='password' />
                     <br /><br />
