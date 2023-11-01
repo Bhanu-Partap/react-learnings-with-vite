@@ -11,13 +11,14 @@ export default function Login() {
 
     function userHandler(e) {
         let item = e.target.value;
-
-        if (item.length < 3) {
-            setUserErr(true);
-        }
-        else{
-            setUserErr(false)
-        }
+        let users = ["Bmw", "Bugatti", "M5"];
+        for (let i = 0; i <= users.length; i++)
+            if (item[i] == users) {
+                setUserErr(true);
+            }
+            else {
+                setUserErr(false)
+            }
         console.warn(e.target.value.length);
     }
 
@@ -30,7 +31,7 @@ export default function Login() {
                     <h1>Login Details</h1>
                     <input type="text" placeholder='User Id' onChange={userHandler} /> {userErr ? <span>User Not Verified</span> : <span>User Verified</span>}
                     <br /> <br />
-                    <input type="text" placeholder='password' />
+                    <input type="password" placeholder='password' />
                     <br /><br />
                     <button type="submit">Login</button>
                 </form>
