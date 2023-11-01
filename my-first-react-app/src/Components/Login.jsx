@@ -9,14 +9,19 @@ export default function Login() {
     }
 
     function userHandler(e){
-        e.preventDefault()
+        let item =e.target.value;
+        if(item.length <3){
+            console.warn("invalid");
+        }
+        console.warn(e.target.value.length);
     }
 
-
+  
+  
   return (
     <>
         <div className="Login">
-            <form onChange={loginHandle} >
+            <form onSubmit={loginHandle} >
                 <h1>Login Details</h1>
                 <input type="text" placeholder='User Id'  onChange={userHandler}/>
                 <br /> <br />
