@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export default function Login() {
-    
+    const [user, setUser] = useState(false);
+    const [password, setPassword] = useState(false);
     const [userErr, setUserErr] = useState(false);
     const [passErr, setPassErr] = useState(false);
 
     function loginHandle(e) {
+        if(user.length  <3 ||   password.length <8){
+            alert("type correct values")
+        }
+         else{
+            alert("Everything 'fine ")
+         }
         e.preventDefault();
     }
 
@@ -18,7 +25,7 @@ export default function Login() {
         else{
             setUserErr(false)
         }
-        console.warn(e.target.value.length);
+        setUser(item);
     }
 
     function passwordHandler(e) {
@@ -30,6 +37,7 @@ export default function Login() {
         else{
             setPassErr(false)
         }
+        setPassword(item);
     }
 
 
