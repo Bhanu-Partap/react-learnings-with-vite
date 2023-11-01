@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
 export default function Login() {
-    const [userId, setUserId] = useState("");
-    const [password, setPassword] = useState("");
+    
     const [userErr, setUserErr] = useState(false);
     const [passErr, setPassErr] = useState(false);
 
