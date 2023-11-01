@@ -2,6 +2,7 @@ import "./App.css"
 import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
 import Profile from "./Components/Profile"
+import PropsAsset from "./Components/PropsAsset"
 // import InputBox from "./Components/InputBox"
 // import ToggleElement from "./Components/ToggleElement"
 // import React from "react"
@@ -31,6 +32,11 @@ export default function App() {
   //   setName("BMW");
   // }
 
+  function getData(){
+    alert("your Data is here")
+  }
+
+
   return (
     <>
       {/* <h1>{data}</h1>
@@ -59,7 +65,8 @@ export default function App() {
 
       {/* <Formbox /> */}
       {/* <Profile /> */}
-      <Login />
+      {/* <Login /> */}
+      <PropsAsset data={getData} />
 
     </>
   )
