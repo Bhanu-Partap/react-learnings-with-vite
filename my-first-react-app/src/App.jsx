@@ -1,7 +1,7 @@
 import "./App.css"
-import Login from "./Components/Login"
+// import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
-import Profile from "./Components/Profile"
+// import Profile from "./Components/Profile"
 import PropsAsset from "./Components/PropsAsset"
 // import InputBox from "./Components/InputBox"
 // import ToggleElement from "./Components/ToggleElement"
@@ -33,7 +33,7 @@ export default function App() {
   // }
 
   function getData(){
-    alert("your Data is here")
+    alert("your Data is here");
   }
 
 
