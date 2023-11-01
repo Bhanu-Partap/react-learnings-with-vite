@@ -1,4 +1,5 @@
 import "./App.css"
+import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
 import Profile from "./Components/Profile"
 // import InputBox from "./Components/InputBox"
@@ -57,7 +58,8 @@ export default function App() {
       {/* <ToggleElement /> */}
 
       {/* <Formbox /> */}
-      <Profile />
+      {/* <Profile /> */}
+      <Login />
 
     </>
   )
