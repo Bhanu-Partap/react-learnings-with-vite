@@ -6,7 +6,7 @@ export default function Profile() {
     const [logeedIn, setlogeedIn] = useState(false)
   return (
     <>
-
+        {logeedIn ? <h1>Profie Page rendered successfully</h1> : <h1>Not Loged In</h1>}
     </>
   )
 }
