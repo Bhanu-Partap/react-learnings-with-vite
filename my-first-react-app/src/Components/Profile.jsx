@@ -8,6 +8,8 @@ export default function Profile() {
     <>
         {/* ===================== For only IF ELSE CONDITION ======================== */}
         {/* {logeedIn ? <h1>Profie Page rendered successfully</h1> : <h1>Not Loged In</h1>} */}
+
+        {/* ===================== For IF ELSEIF ELSE Condition ====================== */}
         {logeedIn==1 ? <h1>Profie Page rendered successfully 1</h1> : logeedIn==2 ? <h1>Profie Page rendered successfully 2</h1> : <h1>Not Loged In</h1>}
     </>
   )
