@@ -4,6 +4,7 @@ export default function Login() {
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
     const [userErr, setUserErr] = useState(false);
+    const [passErr, setPassErr] = useState(false);
 
     function loginHandle(e) {
         e.preventDefault();
@@ -11,15 +12,25 @@ export default function Login() {
 
     function userHandler(e) {
         let item = e.target.value;
-        let users = ["Bmw", "Bugatti", "M5"];
-        for (let i = 0; i <= users.length; i++)
-            if (item[i] == users) {
-                setUserErr(true);
-            }
-            else {
-                setUserErr(false)
-            }
+
+        if (item.length < 3) {
+            setUserErr(true);
+        }
+        else{
+            setUserErr(false)
+        }
         console.warn(e.target.value.length);
+    }
+
+    function passwordHandler(e) {
+        let item = e.target.value;
+
+        if (item.length < 8) {
+            setPassErr(true);
+        }
+        else{
+            setPassErr(false)
+        }
     }
 
 
@@ -29,9 +40,9 @@ export default function Login() {
             <div className="Login">
                 <form onSubmit={loginHandle} >
                     <h1>Login Details</h1>
-                    <input type="text" placeholder='User Id' onChange={userHandler} /> {userErr ? <span>User Not Verified</span> : <span>User Verified</span>}
+                    <input type="text" placeholder='User Id' onChange={userHandler} /> {userErr ? <span>User Not Verified</span> : ""}
                     <br /> <br />
-                    <input type="password" placeholder='password' />
+                    <input type="password" placeholder='password' onChange={passwordHandler} /> {passErr ? <span>Password not Valid</span> : ""}
                     <br /><br />
                     <button type="submit">Login</button>
                 </form>
