@@ -32,12 +32,13 @@ export default function App() {
   //   setName("BMW");
   // }
 
-  function getData(){
-    alert("your Data is here");
-  }
+  // function getData(){
+  //   alert("your Data is here");
+  // }
 
   function lamborghini(){
-    <h1>Its BMW here</h1>
+    alert("Its BMW here")
+    // <h1>Its BMW here</h1>
   }
 
 
@@ -70,8 +71,8 @@ export default function App() {
       {/* <Formbox /> */}
       {/* <Profile /> */}
       {/* <Login /> */}
-      <PropsAsset data={getData} name={lamborghini}/>
-
+      <PropsAsset  name={lamborghini()}/>
+      {/* data={getData} */}
     </>
   )
 }
