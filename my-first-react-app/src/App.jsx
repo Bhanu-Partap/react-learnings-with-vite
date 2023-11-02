@@ -36,8 +36,9 @@ export default function App() {
     alert("your Data is here");
   }
 
-  function Lamborghini(){
-    console.warn("your Lamborghini is here");
+  function Lamborghini(a,b){
+    let sum = a+b;
+    return sum;
   }
 
 
