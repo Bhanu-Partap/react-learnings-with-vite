@@ -37,7 +37,7 @@ export default function App() {
   }
 
   function Lamborghini(){
-    alert("your Lamborghini is here");
+    console.warn("your Lamborghini is here");
   }
 
 
