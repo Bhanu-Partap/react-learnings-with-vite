@@ -36,9 +36,8 @@ export default function App() {
     alert("your Data is here");
   }
 
-  function Lamborghini(a,b){
-    let sum = a+b;
-    return sum;
+  function lamborghini(){
+    <h1>Its BMW here</h1>
   }
 
 
@@ -71,7 +70,7 @@ export default function App() {
       {/* <Formbox /> */}
       {/* <Profile /> */}
       {/* <Login /> */}
-      <PropsAsset data={getData} name={Lamborghini}/>
+      <PropsAsset data={getData} name={lamborghini}/>
 
     </>
   )
