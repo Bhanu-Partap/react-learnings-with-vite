@@ -1,8 +1,9 @@
 import "./App.css"
+import Constructor from "./Components/Constructor"
 // import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
 // import Profile from "./Components/Profile"
-import PropsAsset from "./Components/PropsAsset"
+// import PropsAsset from "./Components/PropsAsset"
 // import InputBox from "./Components/InputBox"
 // import ToggleElement from "./Components/ToggleElement"
 // import React from "react"
@@ -36,11 +37,11 @@ export default function App() {
   //   alert("your Data is here");
   // }
 
-  function lamborghini(){
-    // alert("Its BMW here")
-    // <h1>Its BMW here</h1>
-    console.log("Hi there ");
-  }
+  // function lamborghini(){
+  //   // alert("Its BMW here")
+  //   // <h1>Its BMW here</h1>
+  //   console.log("Hi there ");
+  // }
 
 
   return (
@@ -72,8 +73,9 @@ export default function App() {
       {/* <Formbox /> */}
       {/* <Profile /> */}
       {/* <Login /> */}
-      <PropsAsset  name={lamborghini}/>
-      {/* data={getData} */}
+      {/* <PropsAsset data={getData} name={lamborghini}/> */}
+      <Constructor />
+      
     </>
   )
 }
