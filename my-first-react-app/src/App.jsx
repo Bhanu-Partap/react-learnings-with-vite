@@ -71,7 +71,7 @@ export default function App() {
       {/* <Formbox /> */}
       {/* <Profile /> */}
       {/* <Login /> */}
-      <PropsAsset  name={lamborghini()}/>
+      <PropsAsset  name={lamborghini}/>
       {/* data={getData} */}
     </>
   )
