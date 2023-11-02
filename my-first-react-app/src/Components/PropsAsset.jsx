@@ -10,7 +10,7 @@ export default function PropsAsset(props) {
             <button onClick={()=>props.name()}>Call the data</button>  
 
           {/* /==== If you want to show the functionality defined in parent component directly without any wait. You can use with arrow function */} 
-            <button onClick={props.name}>Call the data</button>
+            {/* <button onClick={props.name}>Call the data</button> */}
         </div>
     </>
   )
