@@ -36,6 +36,10 @@ export default function App() {
     alert("your Data is here");
   }
 
+  function Lamborghini(){
+    alert("your Lamborghini is here");
+  }
+
 
   return (
     <>
@@ -66,7 +70,7 @@ export default function App() {
       {/* <Formbox /> */}
       {/* <Profile /> */}
       {/* <Login /> */}
-      <PropsAsset data={getData} />
+      <PropsAsset data={getData} name={Lamborghini}/>
 
     </>
   )
