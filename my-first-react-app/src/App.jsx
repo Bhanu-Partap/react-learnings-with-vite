@@ -37,8 +37,9 @@ export default function App() {
   // }
 
   function lamborghini(){
-    alert("Its BMW here")
+    // alert("Its BMW here")
     // <h1>Its BMW here</h1>
+    console.log("Hi there ");
   }
 
 

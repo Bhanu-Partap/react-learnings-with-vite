@@ -6,7 +6,7 @@ export default function PropsAsset(props) {
         <div className="PropsAsset">
             <h1>Props Asset</h1>
             <h2>hello </h2>
-            <button onClick={()=>props.name()}>Call the data</button>
+            <button onClick={props.name}>Call the data</button>
         </div>
     </>
   )
