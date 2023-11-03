@@ -15,9 +15,12 @@ import React from 'react'
         return (
             <>
                 {/* <h1>Constructor Component {this.state.data}</h1> */}
-                
-                {/* ============// Passign the Props using clas component from the Parent Component ========== */}
+
+{/* ============// Passign the Props using clas component from the Parent Component ========== */}
                 <h1>Constructor Component {this.props.name}</h1>
+
+{/* ============// Passign the Props using class component from constructor ========== */}
+                <h1>Constructor Component {this.name}</h1>
             </>
         )
     }
