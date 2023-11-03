@@ -8,6 +8,7 @@ import React from 'react'
         //     data:"IDK"
 
         // }
+{/* ============// Passign the Props using class component from constructor ========== */}
         // this.name = "honeey"
     }
 
@@ -20,7 +21,7 @@ import React from 'react'
                 <h1>Constructor Component {this.props.name}</h1>
 
 {/* ============// Passign the Props using class component from constructor ========== */}
-                <h1>Constructor Component {this.name}</h1>
+                {/* <h1>Constructor Component {this.name}</h1> */}
             </>
         )
     }
