@@ -5,7 +5,7 @@ export default class Render extends Component {
     return (
       <>
         <div className="render">
-            <h1>Render </h1>
+            <h1>Render {this.props.name}</h1>
         </div>
       </>
     )
