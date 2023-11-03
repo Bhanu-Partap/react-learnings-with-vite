@@ -2,18 +2,22 @@ import React from 'react'
 
  class Constructor extends React.Component {
 
-    constructor(){
-        super();
-        this.state={
-            data:"IDK"
-        }
+    constructor(props){
+        super(props);
+        // this.state={
+        //     data:"IDK"
+
+        // }
+        // this.name = "honeey"
     }
 
     render() {
         return (
             <>
+                {/* <h1>Constructor Component {this.state.data}</h1> */}
                 
-                <h1>Constructor Component {this.state.data}</h1>
+                {/* ============// Passign the Props using clas component from the Parent Component ========== */}
+                <h1>Constructor Component {this.props.name}</h1>
             </>
         )
     }

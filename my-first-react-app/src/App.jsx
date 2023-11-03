@@ -74,7 +74,7 @@ export default function App() {
       {/* <Profile /> */}
       {/* <Login /> */}
       {/* <PropsAsset data={getData} name={lamborghini}/> */}
-      <Constructor />
+      <Constructor name="honeey" />
       
     </>
   )
