@@ -1,5 +1,6 @@
 import "./App.css"
-import Constructor from "./Components/Constructor"
+// import Constructor from "./Components/Constructor"
+import Render from "./Components/Render"
 // import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
 // import Profile from "./Components/Profile"
@@ -74,7 +75,8 @@ export default function App() {
       {/* <Profile /> */}
       {/* <Login /> */}
       {/* <PropsAsset data={getData} name={lamborghini}/> */}
-      <Constructor name="honeey" />
+      {/* <Constructor name="honeey" /> */}
+      <Render name="Bugatti" />
       
     </>
   )
