@@ -1,3 +1,4 @@
+import { useState } from "react"
 import "./App.css"
 // import Constructor from "./Components/Constructor"
 import Render from "./Components/Render"
@@ -45,6 +46,9 @@ export default function App() {
   // }
 
 
+// =================== For Render Component State created =====================//
+const[name,setName] = useState("BMW")
+
   return (
     <>
       {/* <h1>{data}</h1>
@@ -76,7 +80,7 @@ export default function App() {
       {/* <Login /> */}
       {/* <PropsAsset data={getData} name={lamborghini}/> */}
       {/* <Constructor name="honeey" /> */}
-      <Render name="Bugatti" />
+      <Render name="Porsche" />
       
     </>
   )
