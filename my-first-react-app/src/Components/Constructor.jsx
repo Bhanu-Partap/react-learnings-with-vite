@@ -4,12 +4,16 @@ import React from 'react'
 
     constructor(){
         super();
+        this.state={
+            data:"IDK"
+        }
     }
 
     render() {
         return (
             <>
-                <h1>Constructor Component</h1>
+                
+                <h1>Constructor Component {this.state.data}</h1>
             </>
         )
     }
