@@ -1,7 +1,7 @@
 // import { useState } from "react"
 import "./App.css"
+import ComponentDidMount from "./Components/ComponentDidMount"
 // import Constructor from "./Components/Constructor"
-import Render from "./Components/Render"
 // import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
 // import Profile from "./Components/Profile"
@@ -80,7 +80,8 @@ export default function App() {
       {/* <Login /> */}
       {/* <PropsAsset data={getData} name={lamborghini}/> */}
       {/* <Constructor name="honeey" /> */}
-      <Render  />
+      {/* <Render  /> */}
+      <ComponentDidMount />
       
     </>
   )
