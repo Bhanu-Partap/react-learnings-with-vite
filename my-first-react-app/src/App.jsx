@@ -1,4 +1,4 @@
-import { useState } from "react"
+// import { useState } from "react"
 import "./App.css"
 // import Constructor from "./Components/Constructor"
 import Render from "./Components/Render"
@@ -47,7 +47,7 @@ export default function App() {
 
 
 // =================== For Render Component State created =====================//
-const[name,setName] = useState("BMW")
+// const[name,setName] = useState("BMW")
 
   return (
     <>

@@ -7,7 +7,7 @@ export default class Render extends Component {
       name:"Nothing here"
     }
   }
-  render(props) {
+  render() {
     console.warn("Render method :",this.props);
     return (
       <>
