@@ -80,7 +80,7 @@ const[name,setName] = useState("BMW")
       {/* <Login /> */}
       {/* <PropsAsset data={getData} name={lamborghini}/> */}
       {/* <Constructor name="honeey" /> */}
-      <Render name="Porsche" />
+      <Render  />
       
     </>
   )
