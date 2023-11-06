@@ -5,7 +5,6 @@ export default class ComponentDidMount extends Component {
         super()
         console.warn("Constructor");
     }
-
     componentDidMount(){
         console.warn("ComponentDidMount");
     }
