@@ -7,7 +7,7 @@ export default class Render extends Component {
       <>
         <div className="render">
             <h1>Render {this.props.name}</h1>
-            <button>Update Name</button>
+            <button onClick={()=>this.props.name}>Update Name</button>
         </div>
       </>
     )
