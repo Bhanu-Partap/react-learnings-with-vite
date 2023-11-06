@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class ComponentDidMount extends Component {
+export default class ComponentDidMount extends React.Component {
     constructor(){
         super()
         console.warn("Constructor");
