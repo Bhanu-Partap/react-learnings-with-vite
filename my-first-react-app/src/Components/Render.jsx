@@ -12,7 +12,7 @@ export default class Render extends Component {
     return (
       <>
         <div className="render">
-            <h1>Render {this.name}</h1>
+            <h1>Render {this.state.name}</h1>
             <button onClick={()=>this.setState({name:"BMW"})}>Update Name</button>
         </div>
       </>
