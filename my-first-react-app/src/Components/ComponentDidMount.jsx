@@ -3,7 +3,7 @@ import React from 'react'
 export default class ComponentDidMount extends React.Component {
     constructor() {
         super()
-        // console.warn("Constructor");
+        console.warn("Constructor");
     }
     componentDidMount() {
         console.warn("ComponentDidMount");
