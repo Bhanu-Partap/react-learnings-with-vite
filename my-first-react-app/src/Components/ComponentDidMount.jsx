@@ -3,7 +3,9 @@ import React from 'react'
 export default class ComponentDidMount extends React.Component {
     constructor() {
         super()
-        console.warn("Constructor");
+        this.state={
+            name:"BMW"
+        }
     }
     componentDidMount() {
         console.warn("ComponentDidMount");
@@ -12,7 +14,8 @@ export default class ComponentDidMount extends React.Component {
         console.warn("Render");
         return (
             <div className="Component">
-                <h1>componentDidMount</h1>
+                <h1>componentDidMount {this.state.name}</h1>
+                <button onClick={()=>this.setState({name:"Lamborghini"})}>Update Name</button>
             </div>
         )
     }
