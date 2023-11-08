@@ -7,7 +7,7 @@ export default class ComponentDidMount extends React.Component {
             name:"BMW"
         }
     }
-    componentDidMount() {
+    componentDidUpdate() {
         console.warn("ComponentDidMount");
     }
     render() {
