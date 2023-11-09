@@ -8,7 +8,7 @@ export default class ComponentDidMount extends React.Component {
         }
     }
     componentDidUpdate() {
-        console.warn("ComponentDidMount");
+        console.warn("ComponentDidUpdate");
     }
     render() {
         console.warn("Render");
