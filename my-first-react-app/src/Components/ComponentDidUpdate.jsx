@@ -8,8 +8,8 @@ export default class ComponentDidUpdate extends Component {
             count:0
         }
     }
-    componentDidUpdate() {
-        console.warn("ComponentDidUpdate");
+    componentDidUpdate(preProps, preState, snapshot) {
+        console.warn("ComponentDidUpdate", preState);
     }
 
     
