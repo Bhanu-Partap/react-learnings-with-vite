@@ -16,7 +16,7 @@ export default class ComponentDidUpdate extends Component {
         console.warn("Render");
         return (
             <div className="Component">
-                <h1>componentDidMount {this.state.name}</h1>
+                <h1>Heyy {this.state.name}</h1>
                 <button onClick={()=>this.setState({name:"Lamborghini"})}>Update Name</button>
             </div>
         )
