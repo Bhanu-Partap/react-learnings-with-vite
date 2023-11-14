@@ -7,13 +7,10 @@ export default class ComponentDidUpdate extends Component {
             name:"BMW"
         }
     }
-    componentDidMount() {
-        console.warn("ComponentDidMount");
+    componentDidUpdate() {
+        console.warn("ComponentDidUpdate");
     }
 
-    // componentDidUpdate() {
-    //     console.warn("ComponentDidUpdate");
-    // }
     
     render() {
         console.warn("Render");
