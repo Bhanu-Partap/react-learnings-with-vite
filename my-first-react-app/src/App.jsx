@@ -1,6 +1,7 @@
 // import { useState } from "react"
 import "./App.css"
 import ComponentDidMount from "./Components/ComponentDidMount"
+import ComponentDidUpdate from "./Components/ComponentDidUpdate"
 // import Constructor from "./Components/Constructor"
 // import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
@@ -81,8 +82,8 @@ export default function App() {
       {/* <PropsAsset data={getData} name={lamborghini}/> */}
       {/* <Constructor name="honeey" /> */}
       {/* <Render  /> */}
-      <ComponentDidMount />
-      
+      {/* <ComponentDidMount /> */}
+      <ComponentDidUpdate />
     </>
   )
 }
