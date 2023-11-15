@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 function UseEffect() {
     const [data, setData] = useState("BMW");
+    const [name, setName] = useState("Bugatti");
 
     function dataupdate() {
         setData("Porsche")
+    }
+
+    function nameUpdate() {
+        setName("M 5")
+
     }
 
 //=============First method to call useEffect()==================//
@@ -21,7 +27,9 @@ function UseEffect() {
     return (
         <>
             <h1>{data}</h1>
+            <h1> {name}</h1>
             <button onClick={dataupdate}>Update data</button>
+            <button onClick={nameUpdate}>Update name</button>
         </>
     )
 }
