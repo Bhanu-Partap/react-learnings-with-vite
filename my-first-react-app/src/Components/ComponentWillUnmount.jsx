@@ -9,7 +9,6 @@ export default class ComponentWillUnmount extends Component{
             }
     }
     render(){
-        console.warn("render");
         return(
             <div className="container">
                 {
