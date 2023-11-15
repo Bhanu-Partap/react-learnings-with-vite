@@ -14,6 +14,7 @@ export default class ComponentWillUnmount extends Component{
                 {
                     this.state.show ?<WillUnmountChild /> : <h1> Child Component Deleted </h1>
                 }
+                
                 <button onClick={()=>this.setState({show:!this.state.show})}> Toggle the child component</button>
             </div>
         )
