@@ -12,7 +12,9 @@ export default class ComponentWillUnmount extends Component{
         console.warn("render");
         return(
             <div className="container">
-                <WillUnmountChild />
+                {
+                    this.state.show ?<WillUnmountChild /> : <h1> ComponentWillUnmount</h1>
+                }
                 <button onClick={()=>this.setState({show:!this.state.show})}> Toggle the child component</button>
             </div>
         )
