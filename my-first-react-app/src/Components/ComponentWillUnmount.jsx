@@ -1,18 +1,19 @@
 import react , {Component} from "react"
+import WillUnmountChild from "./WillUnmountChild";
 
 export default class ComponentWillUnmount extends Component{
     constructor(){
         super()
             this.state= {
-                name:"Bhanu"
+                show:true
             }
     }
     render(){
         console.warn("render");
         return(
             <div className="container">
-                <h1>Component will unmount {this.state.name}</h1>
-                <button onClick={()=>this.setState({name:"Partap"})}> Toggle the child component</button>
+                <WillUnmountChild />
+                <button onClick={()=>this.setState({show:!this.state.show})}> Toggle the child component</button>
             </div>
         )
     }
