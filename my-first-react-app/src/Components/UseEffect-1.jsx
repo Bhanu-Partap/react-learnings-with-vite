@@ -1,6 +1,11 @@
-import React, {useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 
-export default function UseEffect() {
+function UseEffect() {
+    const [data, setData] = useState("BMW");
+
+    function dataupdate() {
+        setData("Porsche")
+    }
 
 //=============First method to call useEffect()==================//
 // ==== For this method we should not have to import the useEffect =====//
@@ -9,11 +14,17 @@ export default function UseEffect() {
     // })
 
 //=============Second method to call useEffect()==================//
-    useEffect(()=>{
+    useEffect(() => {
         alert("UseEffect called")
-    })
+    }, [data])
 
-  return (
-    <h1>useEffect Hook</h1>
-  )
+    return (
+        <>
+            <h1>{data}</h1>
+            <button onClick={dataupdate}>Update data</button>
+        </>
+    )
 }
+
+
+export default UseEffect;
