@@ -8,6 +8,7 @@ export default class ComponentWillUnmount extends Component{
             }
     }
     render(){
+        console.warn("render");
         return(
             <div className="container">
                 <h1>Component will unmount {this.state.name}</h1>
