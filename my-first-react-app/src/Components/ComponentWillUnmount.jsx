@@ -9,7 +9,10 @@ export default class ComponentWillUnmount extends Component{
         }
         render(){
             return(
-                <div> </div>
+                <div className="container">
+                    <h1>Component will unmount</h1>
+                    <button> Toggle the child component</button>
+                </div>
             )
         }
     }
