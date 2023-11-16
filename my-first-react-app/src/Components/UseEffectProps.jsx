@@ -1,6 +1,6 @@
-import  { useEffect, useState } from 'react'
+import  { useEffect } from 'react'
 
-function UseEffect(props) {
+function UseEffectProps(props) {
 
     useEffect(() => {
         alert("UseEffect called")
