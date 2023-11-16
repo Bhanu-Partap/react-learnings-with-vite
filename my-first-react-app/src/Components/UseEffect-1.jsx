@@ -4,6 +4,7 @@ import UseEffectProps from './UseEffectProps';
 function UseEffect() {
     const [data, setData] = useState("BMW");
     const [name, setName] = useState("Bugatti");
+    const [count, setCount] = useState(1);
 
     function dataupdate() {
         setData("Porsche")
@@ -22,16 +23,17 @@ function UseEffect() {
 
 //=============Second method to call useEffect()==================//
     useEffect(() => {
-        alert("UseEffect called")
+        console.warn("UseEffect called")
     }, [data])
 
     return (
         <>
             <h1>{data}</h1>
             <h1> {name}</h1>
-            <UseEffectProps count={1} name={"Mclaren"} />
+            <UseEffectProps count={count} name={"Mclaren"} />
             <button onClick={dataupdate}>Update data</button>
             <button onClick={nameUpdate}>Update name</button>
+            <button onClick={()=>setCount(count+1)}>Update count</button>
         </>
     )
 }
