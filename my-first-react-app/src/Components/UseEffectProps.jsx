@@ -10,7 +10,7 @@ function UseEffectProps(props) {
         <>
             <h1>count : {props.count}</h1>
             <h1>Name : {props.name}</h1>
-            {/* <button onClick={()=>props.count+1}>Update Count</button> */}
+            <button onClick={()=>props.count+1}>Update Count</button>
         </>
     )
 }
