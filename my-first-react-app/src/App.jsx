@@ -3,8 +3,8 @@ import "./App.css"
 // import ComponentDidMount from "./Components/ComponentDidMount"
 // import ComponentDidUpdate from "./Components/ComponentDidUpdate"
 // import ComponentWillUnmount from "./Components/ComponentWillUnmount"
-// import UseEffect from "./Components/UseEffect-1"
-import UseEffectProps from "./Components/UseEffectProps"
+import UseEffect from "./Components/UseEffect-1"
+// import UseEffectProps from "./Components/UseEffectProps"
 // import Constructor from "./Components/Constructor"
 // import Login from "./Components/Login"
 // import Formbox from "./Components/Formbox"
@@ -88,8 +88,7 @@ export default function App() {
       {/* <ComponentDidMount /> */}
       {/* <ComponentDidUpdate /> */}
       {/* <ComponentWillUnmount /> */}
-      {/* <UseEffect /> */}
-      <UseEffectProps count={1} name={"Mclaren"} />
+      <UseEffect />
     </>
   )
 }

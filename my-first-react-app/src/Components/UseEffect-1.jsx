@@ -1,4 +1,5 @@
 import  { useEffect, useState } from 'react'
+import UseEffectProps from './UseEffectProps';
 
 function UseEffect() {
     const [data, setData] = useState("BMW");
@@ -28,6 +29,7 @@ function UseEffect() {
         <>
             <h1>{data}</h1>
             <h1> {name}</h1>
+            <UseEffectProps count={1} name={"Mclaren"} />
             <button onClick={dataupdate}>Update data</button>
             <button onClick={nameUpdate}>Update name</button>
         </>
