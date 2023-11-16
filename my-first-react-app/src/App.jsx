@@ -1,9 +1,10 @@
 // import { useState } from "react"
 import "./App.css"
+import Map from "./Components/Map"
 // import ComponentDidMount from "./Components/ComponentDidMount"
 // import ComponentDidUpdate from "./Components/ComponentDidUpdate"
 // import ComponentWillUnmount from "./Components/ComponentWillUnmount"
-import UseEffect from "./Components/UseEffect-1"
+// import UseEffect from "./Components/UseEffect-1"
 // import UseEffectProps from "./Components/UseEffectProps"
 // import Constructor from "./Components/Constructor"
 // import Login from "./Components/Login"
@@ -88,7 +89,8 @@ export default function App() {
       {/* <ComponentDidMount /> */}
       {/* <ComponentDidUpdate /> */}
       {/* <ComponentWillUnmount /> */}
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <Map />
     </>
   )
 }
