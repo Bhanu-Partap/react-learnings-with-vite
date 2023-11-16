@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Map() {
-    const students = ["BMW M5", "M2", "M8"];
+    const students = ["BMW", "McLaren", "Jeep", "Nissan"];
 
     students.map((item)=>{
         console.warn(item);
