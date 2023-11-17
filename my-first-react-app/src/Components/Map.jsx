@@ -8,10 +8,10 @@ export default function Map() {
   // })
   return (
     <div className="container">
+      <h1>Brand names:</h1>
       {
         students.map((carBrands) => {
-          console.warn(carBrands);
-          <h1 key={carBrands}>Brand names: {carBrands}</h1>
+          <h1 key={carBrands}>{carBrands}</h1>
         })
       }
     </div>
