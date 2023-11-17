@@ -1,7 +1,7 @@
 // import React from 'react'/ 
 
 export default function Map() {
-  const students = ["BMW", "McLaren", "Jeep", "Nissan"]; // Single entity array
+  const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
 
   // const students = [
   //   {Name: "BMW", Model:"M5", Year:"2019"},
