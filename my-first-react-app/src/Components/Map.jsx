@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Map() {
   const students = ["BMW", "McLaren", "Jeep", "Nissan"];
-
+  
+//====Map function utilization ============//
   // students.map((item)=>{
   //     console.warn(item);
   // })
