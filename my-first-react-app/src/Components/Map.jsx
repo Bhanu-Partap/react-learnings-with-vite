@@ -1,13 +1,13 @@
 // import React from 'react'/ 
 
 export default function Map() {
-  const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
+  // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
 
-  // const students = [
-  //   {Name: "BMW", Model:"M5", Year:"2019"},
-  //   {Name: "Lamborghini", Model:"SVJ", Year:"2019"},
-  //   {Name: "Nissan", Model:"GTR-R34", Year:"2017"}
-  // ]; // Multiple entity array
+  const students = [
+    {Name: "BMW", Model:"M5", Year:"2019"},
+    {Name: "Lamborghini", Model:"SVJ", Year:"2019"},
+    {Name: "Nissan", Model:"GTR-R34", Year:"2015"}
+  ]; // Multiple entity array
 
   //====Map function utilization ============//
   // students.map((item)=>{
@@ -26,7 +26,7 @@ export default function Map() {
       {/* =========== 2 Method for multi-line statement================ */}
       {
         students.map((carBrands) => {
-        return  <h1 key={carBrands}>Brand Name :{carBrands}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
+        return  <h1 key={carBrands.Name}>Brand Name :{carBrands.Name}, {carBrands.Model}, {carBrands.Year}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
         })
       }
     </div>
