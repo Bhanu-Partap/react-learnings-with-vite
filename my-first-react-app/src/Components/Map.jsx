@@ -21,8 +21,7 @@ export default function Map() {
       {
         students.map((carBrands) => {
         return  <h1 key={carBrands}>{carBrands}</h1>
-        }
-        )
+        })
       }
     </div>
   )
