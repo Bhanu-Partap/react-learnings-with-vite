@@ -20,7 +20,7 @@ export default function Map() {
       {/* =========== 2 Method for multi-line statement================ */}
       {
         students.map((carBrands) => {
-        return  <h1 key={carBrands}>{carBrands}</h1> //the only difference is the return statement
+        return  <h1 key={carBrands}>{carBrands}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
         })
       }
     </div>
