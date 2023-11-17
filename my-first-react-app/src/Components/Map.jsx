@@ -1,12 +1,13 @@
 // import React from 'react'/ 
 
 export default function Map() {
-  // const students = ["BMW", "McLaren", "Jeep", "Nissan"]; // Single entity array
-  const students = [
-    {Name: "BMW", Model:"M5", Year:"2019"},
-    {Name: "Lamborghini", Model:"SVJ", Year:"2019"},
-    {Name: "Nissan", Model:"GTR-R34", Year:"2017"}
-  ]; // Multiple entity array
+  const students = ["BMW", "McLaren", "Jeep", "Nissan"]; // Single entity array
+
+  // const students = [
+  //   {Name: "BMW", Model:"M5", Year:"2019"},
+  //   {Name: "Lamborghini", Model:"SVJ", Year:"2019"},
+  //   {Name: "Nissan", Model:"GTR-R34", Year:"2017"}
+  // ]; // Multiple entity array
 
   //====Map function utilization ============//
   // students.map((item)=>{
