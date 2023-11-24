@@ -34,8 +34,8 @@ export default function Map() {
           <td>Year </td>
         </tr>
         {
-          Brands.map((carBrands) => 
-            <tr>
+          Brands.map((carBrands,i) => 
+            <tr key={i}>
               <td>{carBrands.Name}</td>
               <td>{carBrands.Model}</td>
               <td>{carBrands.Year}</td>
