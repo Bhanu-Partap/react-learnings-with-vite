@@ -1,4 +1,5 @@
 // import React from 'react'/ 
+import {Table} from "react-bootstrap  "
 
 export default function Map() {
   // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
@@ -26,16 +27,18 @@ export default function Map() {
       {/* =========== 2 Method for multi-line statement================ */}
 
       <h1>List is here</h1>
-      <table>
+      <Table>
         <tbody>
         <tr>
+          <td>Serial No. </td>
           <td>Name </td>
           <td>Model </td>
           <td>Year </td>
         </tr>
         {
-          Brands.map((carBrands,i) => 
+          Brands.map((carBrands,index,i) => 
             <tr key={i}>
+              <td>{index +1}</td>
               <td>{carBrands.Name}</td>
               <td>{carBrands.Model}</td>
               <td>{carBrands.Year}</td>
@@ -44,7 +47,7 @@ export default function Map() {
           )
         }
         </tbody>
-      </table>
+      </Table>
     </div>
   )
 }
