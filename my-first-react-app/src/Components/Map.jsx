@@ -4,9 +4,9 @@ export default function Map() {
   // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
 
   const students = [
-    {Name: "BMW", Model:"M5", Year:"2019"},
-    {Name: "Lamborghini", Model:"SVJ", Year:"2019"},
-    {Name: "Nissan", Model:"GTR-R34", Year:"2015"}
+    { Name: "BMW", Model: "M5", Year: "2019" },
+    { Name: "Lamborghini", Model: "SVJ", Year: "2019" },
+    { Name: "Nissan", Model: "GTR-R34", Year: "2015" }
   ]; // Multiple entity array
 
   //====Map function utilization ============//
@@ -25,18 +25,24 @@ export default function Map() {
       } */}
       {/* =========== 2 Method for multi-line statement================ */}
 
-
       <h1>List is here</h1>
-      {
-        students.map((carBrands) => {
-          <tr>
-        <td>{carBrands.Name}</td>
-        <td>{carBrands.Model}</td>
-        <td>{carBrands.Year}</td>
-      </tr>
-        // return  <h1 key={carBrands.Name}>Brand Name :{carBrands.Name}, {carBrands.Model}, {carBrands.Year}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
-        })
-      }
+      <table>
+        <tr>
+          <td>Name </td>
+          <td>Model </td>
+          <td>Year </td>
+        </tr>
+        {
+          students.map((carBrands) => {
+            <tr>
+              <td>{carBrands.Name}</td>
+              <td>{carBrands.Model}</td>
+              <td>{carBrands.Year}</td>
+            </tr>
+            // return  <h1 key={carBrands.Name}>Brand Name :{carBrands.Name}, {carBrands.Model}, {carBrands.Year}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
+          })
+        }
+      </table>
     </div>
   )
 }
