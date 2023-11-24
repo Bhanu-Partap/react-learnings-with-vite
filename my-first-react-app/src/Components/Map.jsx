@@ -24,17 +24,19 @@ export default function Map() {
         )
       } */}
       {/* =========== 2 Method for multi-line statement================ */}
+
+
       <h1>List is here</h1>
       {
         students.map((carBrands) => {
-        return  <h1 key={carBrands.Name}>Brand Name :{carBrands.Name}, {carBrands.Model}, {carBrands.Year}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
+          <tr>
+        <td>{carBrands.Name}</td>
+        <td>{carBrands.Model}</td>
+        <td>{carBrands.Year}</td>
+      </tr>
+        // return  <h1 key={carBrands.Name}>Brand Name :{carBrands.Name}, {carBrands.Model}, {carBrands.Year}</h1> //the only difference is the return statement , its neended if you want to specify any conditions before the output
         })
       }
-      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
     </div>
   )
 }
