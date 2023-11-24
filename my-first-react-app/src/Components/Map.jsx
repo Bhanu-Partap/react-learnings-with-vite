@@ -1,5 +1,5 @@
 // import React from 'react'/ 
-import {Table} from "react-bootstrap  "
+import {Table} from "react-bootstrap"
 
 export default function Map() {
   // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
@@ -36,9 +36,9 @@ export default function Map() {
           <td>Year </td>
         </tr>
         {
-          Brands.map((carBrands,index,i) => 
+          Brands.map((carBrands, index,i) => 
             <tr key={i}>
-              <td>{index +1}</td>
+              <td key={index}>{index +1}</td>
               <td>{carBrands.Name}</td>
               <td>{carBrands.Model}</td>
               <td>{carBrands.Year}</td>
