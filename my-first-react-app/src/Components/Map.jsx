@@ -3,7 +3,7 @@
 export default function Map() {
   // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
 
-  const students = [
+  const Brands = [
     { Name: "BMW", Model: "M5", Year: "2019" },
     { Name: "Lamborghini", Model: "SVJ", Year: "2019" },
     { Name: "Nissan", Model: "GTR-R34", Year: "2015" }
@@ -33,7 +33,7 @@ export default function Map() {
           <td>Year </td>
         </tr>
         {
-          students.map((carBrands) => {
+          Brands.map((carBrands) => {
             <tr>
               <td>{carBrands.Name}</td>
               <td>{carBrands.Model}</td>
