@@ -37,14 +37,14 @@ export default function Map() {
                 </tr>
             </tbody>
             {
-                Brands.map((item)=>{
-                    <tr>
+                Brands.map((item)=>
+                <tr>
                 <td>{item.Name}</td>
                 <td>{item.Model}</td>
                 <td>{item.Year}</td>
-                <td>{item.Address}</td>
+                <td>Address</td>
                 </tr>
-                })
+                )
             }
         </Table>
     </div>
