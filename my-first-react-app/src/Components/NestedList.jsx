@@ -1,0 +1,32 @@
+// import React from 'react'/ 
+// import {Table} from "react-bootstrap"
+
+export default function Map() {
+  // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
+
+  const Brands = [
+    { Name: "BMW", Model: "M5", Year: "2019", Address:[
+      {Engine_No:"25436ad865", Origin:"Germany"},
+      {Engine_No:"25436ad866", Origin:"Germany"},
+      {Engine_No:"25436ad867", Origin:"Germany"},
+      {Engine_No:"25436ad868", Origin:"Germany"}
+    ] },
+    { Name: "Lamborghini", Model: "SVJ", Year: "2019", Address:[
+      {Engine_No:"78456SVJ5756", Origin:"Italy"},
+      {Engine_No:"78456SVJ5757", Origin:"Italy"},
+      {Engine_No:"78456SVJ5758", Origin:"Italy"},
+      {Engine_No:"78456SVJ5759", Origin:"Italy"}
+    ]  },
+    { Name: "Nissan", Model: "R-34", Year: "2015",  Address:[
+      {Engine_No:"GTR58755", Origin:"Japan"},
+      {Engine_No:"GTR58756", Origin:"Japan"},
+      {Engine_No:"GTR58757", Origin:"Japan"},
+      {Engine_No:"GTR58758", Origin:"Japan"}
+    ]  }
+  ]; 
+
+  return (
+    <div className="container">
+    </div>
+  )
+}
