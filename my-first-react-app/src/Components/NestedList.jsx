@@ -49,8 +49,9 @@ export default function Map() {
                             <td>{item.Name}</td>
                             <td>{item.Model}</td>
                             <td>{item.Year}</td>
-                            <td>{
-                                item.Address.map((data)=>
+                            <td>
+                                
+                                {item.Address.map((data)=>
                                 <tr>
                                 <td>{data.Engine_No}</td>
                                 <td>{data.Origin}</td>
