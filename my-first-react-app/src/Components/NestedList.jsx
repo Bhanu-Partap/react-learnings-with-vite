@@ -44,15 +44,14 @@ export default function Map() {
                 </tbody>
                 {
                     Brands.map((item) =>
-
-                        <tr>
-                            <td>{item.Name}</td>
+                        <tr key={item}>
+                            <td >{item.Name}</td>
                             <td>{item.Model}</td>
                             <td>{item.Year}</td>
                             <td>
                                 
                                 {item.Address.map((data)=>
-                                <tr>
+                                <tr key={data}>
                                 <td>{data.Engine_No}</td>
                                 <td>{data.Origin}</td>
                                 </tr>
