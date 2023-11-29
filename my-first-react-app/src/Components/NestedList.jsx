@@ -1,8 +1,7 @@
-// import React from 'react'/ 
-// import {Table} from "react-bootstrap"
+// import React from 'react'
+import {Table} from "react-bootstrap"
 
 export default function Map() {
-  // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
 
   const Brands = [
     { Name: "BMW", Model: "M5", Year: "2019", Address:[
@@ -27,6 +26,17 @@ export default function Map() {
 
   return (
     <div className="container">
+        <h1>List with nested array</h1>
+        <Table>
+            <tbody>
+                <tr>
+                <td>Name</td>
+                <td>Model</td>
+                <td>Year</td>
+                <td>Address</td>
+                </tr>
+            </tbody>
+        </Table>
     </div>
   )
 }
