@@ -6,9 +6,10 @@ export default function Map() {
 
   const Brands = [
     { Name: "BMW", Model: "M5", Year: "2019", Address:[
-      {
-        Engine_No:"25436ad865", Origin:"Germany"
-      }
+      {Engine_No:"25436ad865", Origin:"Germany"},
+      {Engine_No:"25436ad866", Origin:"Germany"},
+      {Engine_No:"25436ad867", Origin:"Germany"},
+      {Engine_No:"25436ad868", Origin:"Germany"}
     ] },
     { Name: "Lamborghini", Model: "SVJ", Year: "2019" },
     { Name: "Nissan", Model: "R-34", Year: "2015" }
