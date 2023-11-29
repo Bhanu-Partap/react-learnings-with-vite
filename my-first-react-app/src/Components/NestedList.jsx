@@ -36,6 +36,16 @@ export default function Map() {
                 <td>Address</td>
                 </tr>
             </tbody>
+            {
+                Brands.map((item)=>{
+                    <tr>
+                <td>{item.Name}</td>
+                <td>{item.Model}</td>
+                <td>{item.Year}</td>
+                <td>{item.Address}</td>
+                </tr>
+                })
+            }
         </Table>
     </div>
   )

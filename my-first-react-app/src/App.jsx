@@ -1,6 +1,7 @@
 // import { useState } from "react"
 import "./App.css"
-import Map from "./Components/Map"
+// import Map from "./Components/Map"
+import NestedList from "./Components/NestedList"
 // import ComponentDidMount from "./Components/ComponentDidMount"
 // import ComponentDidUpdate from "./Components/ComponentDidUpdate"
 // import ComponentWillUnmount from "./Components/ComponentWillUnmount"
@@ -90,7 +91,8 @@ export default function App() {
       {/* <ComponentDidUpdate /> */}
       {/* <ComponentWillUnmount /> */}
       {/* <UseEffect /> */}
-      <Map />
+      {/* <Map /> */}
+      <NestedList />
     </>
   )
 }
