@@ -5,7 +5,11 @@ export default function Map() {
   // const students = ["BMW", "McLaren", "Lamborghini", "Nissan"]; // Single entity array
 
   const Brands = [
-    { Name: "BMW", Model: "M5", Year: "2019" },
+    { Name: "BMW", Model: "M5", Year: "2019", Address:[
+      {
+        Engine_No:"25436ad865", Origin:"Germany"
+      }
+    ] },
     { Name: "Lamborghini", Model: "SVJ", Year: "2019" },
     { Name: "Nissan", Model: "R-34", Year: "2015" }
   ]; // Multiple entity array
