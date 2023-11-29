@@ -31,9 +31,9 @@ export default function Map() {
     ];
 
     return (
-        <div className="container">
+        <div>
             <h1>List with nested array</h1>
-            <Table>
+            <Table variant="dark" striped>
                 <tbody>
                     <tr>
                         <td>Name</td>
@@ -49,7 +49,6 @@ export default function Map() {
                             <td>{item.Model}</td>
                             <td>{item.Year}</td>
                             <td>
-                                
                                 {item.Address.map((data)=>
                                 <tr key={data}>
                                 <td>{data.Engine_No}</td>
