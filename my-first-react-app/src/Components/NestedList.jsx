@@ -33,7 +33,7 @@ export default function Map() {
     return (
         <div>
             <h1>List with nested array</h1>
-            <Table variant="dark" striped>
+            <Table >
                 <tbody>
                     <tr>
                         <td>Name</td>
