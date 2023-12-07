@@ -11,6 +11,12 @@ export default function ReuseComponent() {
   return (
     <>
         <h1>The Reuse Component</h1>
+
+        {
+            users.map((item)=>
+            
+            )
+        }
     </>
   )
 }
