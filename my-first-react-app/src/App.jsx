@@ -1,5 +1,6 @@
 // import { useState } from "react"
 import "./App.css"
+import ReuseComponent from "./Components/ReuseComponent"
 // import Map from "./Components/Map"
 // import NestedList from "./Components/NestedList"
 // import ComponentDidMount from "./Components/ComponentDidMount"
@@ -93,7 +94,7 @@ export default function App() {
       {/* <UseEffect /> */}
       {/* <Map /> */}
       {/* <NestedList /> */}
-      
+      <ReuseComponent />
     </>
   )
 }
