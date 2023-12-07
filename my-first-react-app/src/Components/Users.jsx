@@ -3,7 +3,7 @@ import React from 'react'
  function Users(props) {
   return (
     <>
-        <h1>User {props.data.item.name}</h1>
+        <h1>User {props.data.Name}</h1>
     </>
     )
 }

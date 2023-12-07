@@ -1,5 +1,4 @@
-import React from 'react'
-import Test from './Test'
+import Users from './Users'
 
 export default function ReuseComponent() {
 
@@ -15,7 +14,7 @@ export default function ReuseComponent() {
 
         {
             users.map((item)=>
-            <Test data={item} />
+            <Users data={item} />
             )
         }
     </>
