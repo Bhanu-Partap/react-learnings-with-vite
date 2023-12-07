@@ -15,7 +15,7 @@ export default function ReuseComponent() {
 
         {
             users.map((item)=>
-            <Test />
+            <Test data={item} />
             )
         }
     </>

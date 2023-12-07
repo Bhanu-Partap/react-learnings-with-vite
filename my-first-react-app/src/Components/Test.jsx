@@ -6,7 +6,7 @@ export default function Test() {
   }
   return (
       <div>
-        {/* <h1> Hello from Test component</h1> */}
+        <h1> Hello from Test component</h1>
         <button onClick={ClickBait}> Click me</button>
       </div>
   )
