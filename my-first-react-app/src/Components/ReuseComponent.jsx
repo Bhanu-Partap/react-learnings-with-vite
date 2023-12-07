@@ -1,4 +1,5 @@
 import React from 'react'
+import Test from './Test'
 
 export default function ReuseComponent() {
 
@@ -14,7 +15,7 @@ export default function ReuseComponent() {
 
         {
             users.map((item)=>
-            <h1>Item is here</h1>
+            <Test />
             )
         }
     </>
