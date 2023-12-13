@@ -16,7 +16,8 @@
  function Users(props) {
   return (
     <>
-        <h1>User {props.data.Name}</h1>
+        <h2>User Name: </h2>
+        <button onClick={props.alert}>Click ME</button>
     </>
     )
 }
