@@ -14,10 +14,13 @@
 
 
  function Users(props) {
+
+    const data = "Outside data stored"
+
   return (
     <>
         <h2>User Name: </h2>
-        <button onClick={props.alert}>Click ME</button>
+        <button onClick={()=>props.content(data)}>Click ME</button>
     </>
     )
 }

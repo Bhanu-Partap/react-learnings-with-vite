@@ -1,6 +1,6 @@
 // import { useState } from "react"
 import "./App.css"
-import ReuseComponent from "./Components/ReuseComponent"
+import ParentAlert from "./Components/ParentAlert"  
 // import Map from "./Components/Map"
 // import NestedList from "./Components/NestedList"
 // import ComponentDidMount from "./Components/ComponentDidMount"
@@ -94,7 +94,8 @@ export default function App() {
       {/* <UseEffect /> */}
       {/* <Map /> */}
       {/* <NestedList /> */}
-      <ReuseComponent />
+      {/* <ReuseComponent /> */}
+      <ParentAlert />
     </>
   )
 }
