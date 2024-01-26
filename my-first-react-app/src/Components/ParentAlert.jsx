@@ -5,7 +5,7 @@ export default function ParentAlert() {
 
     function parentAlert(data){
         // alert('Sending data from child to parent')
-        alert(data)
+        alert(data );
     }
   return (
     <>
