@@ -1,10 +1,11 @@
 import './App.css'
+import Routing from './Components/Routing'
 
 function App() {
 
   return (
     <>
-      <h1>nothing here till now</h1>
+      <Routing />
     </>
   )
 }
