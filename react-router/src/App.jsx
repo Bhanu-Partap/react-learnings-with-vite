@@ -1,11 +1,13 @@
 import './App.css'
-import Routing from "./Router"
+import Navbar from './Components/Navbar'
+// import Routing from "./Router"
 
 function App() {
 
   return (
     <>
-      <Routing />
+      <Navbar />
+      {/* <Routing /> */}
     </>
   )
 }
