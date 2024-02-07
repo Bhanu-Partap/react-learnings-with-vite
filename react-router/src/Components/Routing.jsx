@@ -12,7 +12,7 @@ export default function Routing() {
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/*' element={<Page404 />} />
-                <Route path='/user/:Id' element={<User />} />
+                <Route path='/user/:id' element={<User />} />
             </Routes>
         </BrowserRouter>
     </>
