@@ -1,13 +1,11 @@
 import {useParams} from "react-router-dom"
 
 export default function User() {
-  const {id = 452} = useParams();
-  // const {name} = params()
+  const {id = 452} = useParams(); 
 
   return (
     <>
-          {/* <h1>{name} Page</h1> */}
-          <h1>user Page {id}</h1>
+          <h1>User Page with {id} id</h1>
     </>
   )
 }

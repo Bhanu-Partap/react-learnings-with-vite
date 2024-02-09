@@ -4,6 +4,7 @@ import About from '../Pages/About.jsx'
 import Page404 from "../Pages/Page404.jsx"
 import User from "../Pages/User.jsx"
 import PublicLayout from "../Layout/PublicLayout/index.jsx"
+import Contact from "../Pages/Contact.jsx"
 
 export default function Routing() {
   return (
@@ -14,6 +15,7 @@ export default function Routing() {
           <Route element={<PublicLayout />} >
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='/user/:id' element={<User />} />
             <Route path='/*' element={<Page404 />} />
           </Route>
