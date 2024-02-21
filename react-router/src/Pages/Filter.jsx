@@ -14,6 +14,10 @@ export default function Filter() {
         <h1>Filter page</h1>
         <h3>Age : {age}</h3>
         <h3>City : {city}</h3>
+
+        {/* USING SETsEARCHpARAMS */}
+        <button onClick={()=>setSearchParams({age :22, city: 'Ludhiana'})}>Set the value to the query params </button>
+
     </>
   )
 }
