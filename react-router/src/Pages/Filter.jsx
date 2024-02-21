@@ -17,6 +17,7 @@ export default function Filter() {
 
         {/* USING SETsEARCHpARAMS */}
         <button onClick={()=>setSearchParams({age :22, city: 'Ludhiana'})}>Set the value to the query params </button>
+        <input type="number" onChange={(e)=>setSearchParams({age :e.target.value})} placeholder="place Set the value to the query params"/> 
 
     </>
   )
