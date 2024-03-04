@@ -5,6 +5,8 @@ import Page404 from "../Pages/Page404.jsx"
 import User from "../Pages/User.jsx"
 import PublicLayout from "../Layout/PublicLayout/index.jsx"
 import Contact from "../Pages/Contact.jsx"
+import Company from "../Components/Company.jsx"
+import Fellony from "../Components/Fellony.jsx"
 import Filter from "../Pages/Filter.jsx"
 
 export default function Routing() {
@@ -16,10 +18,13 @@ export default function Routing() {
           <Route element={<PublicLayout />} >
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
             <Route path='/filter' element={<Filter />} />
             <Route path='/user/:id' element={<User />} />
             <Route path='/*' element={<Page404 />} />
+            <Route path='/contact' element={<Contact />}>
+              <Route path="company" element = {<Company />} />
+              <Route path="fellony" element = {<Fellony />} />
+               </Route>
           </Route>
         </Routes>
       </BrowserRouter>
