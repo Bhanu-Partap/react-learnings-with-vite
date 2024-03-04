@@ -1,4 +1,4 @@
-import { Link,Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -10,3 +10,4 @@ export default function Contact() {
     </>
   )
 }
+  

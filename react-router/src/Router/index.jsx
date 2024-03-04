@@ -22,9 +22,9 @@ export default function Routing() {
             <Route path='/user/:id' element={<User />} />
             <Route path='/*' element={<Page404 />} />
             <Route path='/contact' element={<Contact />}>
-              <Route path="company" element = {<Company />} />
-              <Route path="fellony" element = {<Fellony />} />
-               </Route>
+              <Route path="company" element={<Company />} />
+              <Route path="fellony" element={<Fellony />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
