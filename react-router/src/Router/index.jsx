@@ -16,7 +16,7 @@ export default function Routing() {
         <Routes>
           <Route path='/' element={<Navigate to="/home" />} />
           <Route element={<PublicLayout />} >
-            <Route path='/home' element={<Home />} />
+            <Route path='/home' element={<Home />} />   
             <Route path='/about' element={<About />} />
             <Route path='/filter' element={<Filter />} />
             <Route path='/user/:id' element={<User />} />
