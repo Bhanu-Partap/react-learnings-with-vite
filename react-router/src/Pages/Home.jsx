@@ -1,10 +1,11 @@
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate()
   return (
     <> 
       <h1>Home Page</h1>
-      {/* <button>Go to Non existing page</button> */}
-      <button onClick= {()=>{<a href="/filter"></a> }}>Go to  Filter page</button>
+      <button onClick= {()=>navigate("/about")}>Go to  About page</button>
     </>
   )
 }
