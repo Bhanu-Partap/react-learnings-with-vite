@@ -8,6 +8,7 @@ import Contact from "../Pages/Contact.jsx"
 import Company from "../Components/Company.jsx"
 import Fellony from "../Components/Fellony.jsx"
 import Filter from "../Pages/Filter.jsx"
+import Protected from "../Pages/Protected.jsx"
 
 export default function Routing() {
   return (
@@ -16,7 +17,7 @@ export default function Routing() {
         <Routes>
           <Route path='/' element={<Navigate to="/home" />} />
           <Route element={<PublicLayout />} >
-            <Route path='/home' element={<Home />} />
+            <Route path='/home' element={<Protected  Component = {Home}/>} />
             <Route path='/about' element={<About />} />
             <Route path='/filter' element={<Filter />} >
             <Route path="user" element={<User />} />
