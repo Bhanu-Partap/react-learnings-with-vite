@@ -9,6 +9,7 @@ import Company from "../Components/Company.jsx"
 import Fellony from "../Components/Fellony.jsx"
 import Filter from "../Pages/Filter.jsx"
 import Protected from "../Pages/Protected.jsx"
+import Login from "../Pages/Login.jsx"
 
 export default function Routing() {
   return (
@@ -19,6 +20,7 @@ export default function Routing() {
           <Route element={<PublicLayout />} >
             <Route path='/home' element={<Protected  Component = {Home}/>} />
             <Route path='/about' element={<About />} />
+            <Route path='/login' element={<Login />} />
             <Route path='/filter' element={<Filter />} >
             <Route path="user" element={<User />} />
             </Route>
