@@ -19,9 +19,9 @@ export default function Routing() {
           <Route path='/' element={<Navigate to="/home" />} />
           <Route element={<PublicLayout />} >
             <Route path='/home' element={<Protected  Component = {Home}/>} />
-            <Route path='/about' element={<About />} />
+            <Route path='/about' element={<Protected  Component = {About}/>} />
             <Route path='/login' element={<Login />} />
-            <Route path='/filter' element={<Filter />} >
+            <Route path='/filter' element={<Protected  Component = {Filter}/>} >
             <Route path="user" element={<User />} />
             </Route>
             <Route path='/user/:id' element={<User />} />
