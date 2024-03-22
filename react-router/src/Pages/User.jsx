@@ -26,7 +26,7 @@ export default function User() {
     <>
     {
       users.map((item)=>{
-        console.log(item.name); 
+        <div>console.log({item.name})</div>
       })
     }
     </>
